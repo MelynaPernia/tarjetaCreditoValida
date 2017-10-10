@@ -7,30 +7,30 @@
 
 *Pseudocódigo de la función isValidCard*
 1. Funcion isValidCard
-  + arrNumberReverse= numberCard.reverse();
-  + newArr=[];
-  + sum=0;
-  + sumDigit=0;
+  1. arrNumberReverse= numberCard.reverse();
+  2. newArr=[];
+  3. sum=0;
+  4. sumDigit=0;
 
-  + Para i=0 Hasta n.length Con Paso 1 Hacer
-    i. newArr[i]=(parseInt)arrNumberReverse[i];
-  + Fin de Para
+  5. Para i=0 Hasta n.length Con Paso 1 Hacer
+    1. newArr[i]=(parseInt)arrNumberReverse[i];
+  6. Fin de Para
 
-  + Para j=0 Hasta newArr.length Con Paso 1 Hacer
-    i. Si (((j+1)%2)===0)
-        + Si (newArr[j]x2 >= 10)
-            i. sumDigit=(trunc)newArr[j]x2)/10+ (newArr[j]x2)%10;
-            ii. sum+=sumDigit;
-        + Si no
-            i. sum+=newArr[j]x2;
-        + Fin Si
-    ii. Si no
-        i. sum+=newArr[j];
-    iii. Fin si
-  + Fin de Para
-  + Si(sum%2===0)
-    i. Escribir 'Numero de tarjeta Valida';
-  + Si no
-    i. Escribir 'Numero de tarjeta no Valida';
-  + Fin de Si
-21. Fin Funcion
+  7. Para j=0 Hasta newArr.length Con Paso 1 Hacer
+     1. Si (((j+1)%2)===0)
+        1. Si (newArr[j]x2 >= 10)
+            1. sumDigit=(trunc)newArr[j]x2)/10+ (newArr[j]x2)%10;
+            2. sum+=sumDigit;
+        2. Si no
+            1. sum+=newArr[j]x2;
+        3. Fin Si
+    2. Si no
+        1. sum+=newArr[j];
+    3. Fin si
+  8. Fin de Para
+  9. Si(sum%2===0)
+    1. Escribir 'Numero de tarjeta Valida';
+  10. Si no
+    1. Escribir 'Numero de tarjeta no Valida';
+  11. Fin de Si
+2. Fin Funcion
