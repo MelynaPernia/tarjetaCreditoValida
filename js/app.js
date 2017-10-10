@@ -6,9 +6,9 @@ var isValidCard= function(numberCard){
   var arrNumberReverse= ((numberCard.toString()).split('')).reverse();
   //Creando un arreglo vacío
   var newArr=[];
-  //creando una variable sum inicializado en 0
+  //Creando una variable sum inicializado en 0
   var sum=0;
-  //creando una variable sumDigit inicializado en 0
+  //Creando una variable sumDigit inicializado en 0
   var sumDigit=0;
 
   //Creando un bucle For que recorre el arreglo arrNumberReverse
@@ -25,14 +25,14 @@ var isValidCard= function(numberCard){
         if(newArr[j]*2>=10){
           //la sumDig es igual a la suma de los digitos
           sumDigit= Math.trunc((newArr[j]*2)/10)  + ((newArr[j]*2)%10);
-          //almaceno en el acumulador sum la suma de los digitos
+          //Almaceno en el acumulador sum la suma de los digitos
           sum+=sumDigit;
         }else{
-          //almacena en sum el elemento del array multiplicado por 2
+          //Almacena en sum el elemento del array multiplicado por 2
           sum+=newArr[j]*2;
         }
     }else{
-        //almacena en sum el elemento del array
+        //Almacena en sum el elemento del array
         sum+=newArr[j];
     }
   }
